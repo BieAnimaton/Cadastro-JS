@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cadastro de pessoas</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Adicione um contato</h1>
+    </header>
+    <section id="template">
+        <div>
+            <p>Nome: <input type="text" name="inpName" id="inpNom"></p>
+            <p>Email: <input type="email" name="inpEma" id="inpEma"></p>
+            <p>Senha: <input type="password" name="inpSen" id="inpSen"></p>
+            <p>Foto: <input type="file" name="inpFot" id="inpFot"></p>
+            <p>Nascimento: <input type="date" name="inpNas" id="inpNas">
+            <p>Sexo:
+                <input type="radio" name="radsex" id="mas">
+                <label for="mas">Masculino</label>
+
+                <input type="radio" name="radsex" id="fem">
+                <label for="fem">Feminino</label>
+
+                <input type="radio" name="radsex" id="oth">
+                <label for="oth">Outro</label></p>
+            <p>Profissão:
+                <input type="radio" name="pro" id="pro1"> Programador
+                <input type="radio" name="pro" id="pro2"> Designer
+                <input type="radio" name="pro" id="pro3"> Editor Visual
+            </p>
+        </div>
+        <div><br><br>
+            <button onclick="adicionar()">Adicionar Contato</button>
+            <button onclick="resetar()">Resetar</button>
+        </div>
+    </section>
+    <br><br>
+    <section id="contatosSex">Contatos adicionados:
+        <div id="contatosLista">
+            
+        </div>
+    </section>
+    <footer>
+        <p>&copy; CursoemVideo</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
